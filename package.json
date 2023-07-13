@@ -1,0 +1,16 @@
+{
+  "name": "learningtime-dm-sem2-personal-website",
+  "version": "1.0.0",
+  "description": "Full stack CRUD website using HTML, CSS, and TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
+  }
+}
