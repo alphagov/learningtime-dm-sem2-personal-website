@@ -6,6 +6,10 @@ body {
     margin-top: 0;
 }
 
+.dark-mode-background {
+    filter: invert(100);
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -13,31 +17,44 @@ body {
     background-color: white;
 }
 
-.banner{
+.banner {
     display: flex;
+}
+
+.invis, .dark-mode {
+    flex:1;
+    display: flex;
+}
+
+.dark-mode {
+    justify-content: end;
+    align-items: center;
+    padding-right: 1px;
+}
+
+.dark-mode button {
+    height: fit-content;
+    width: fit-content;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 48rem;
+    align-self: center;
+    gap: 100px;
     padding: 1rem;
+
     border-bottom: solid 1px black;
-    flex-direction: column;
-    max-width: 48rem;
 }
 
-.banner .left {
-    align-self: center;
-}
-
-.banner .navbar{
-    display: flex;
-    max-width: 48rem;
-    align-self: center;
-}
-
-.banner .navbar ul{
+/* .banner .navbar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 100px;
     padding-inline-start: 0;
-}
+} */
 
 .about-me {
     display: flex;
@@ -46,4 +63,41 @@ body {
     align-self: center;
     padding: 1rem;
 }
+
+#toggle {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #333;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  /* Making a dot switch inside the Toggle Button */
+  #toggle::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #EEE;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+  }
+  
+  /* Changing toggle button background when checked */
+  #toggle:checked {
+    background: grey;
+  }
+  
+  /* Changing dot switch color and moving to the right side when checked */
+  #toggle:checked::before {
+    background: #333;
+    left: 32px;
+  }
 
