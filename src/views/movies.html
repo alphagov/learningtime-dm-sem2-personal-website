@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniel Murray</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class = "container">
+      <header class="banner">
+        <div class="left">
+          <h1>Daniel Murray</h1>
+        </div>                  
+        <nav class="navbar">
+          <ul>
+            <li><a href='../index'>About Me</a></li>
+            <li><a href='/randomthoughts'>Random Thoughts</a></li>
+            <li><a href='/games'>Games</a></li>
+            <li><a>Movies</a>
+          </ul>
+        </nav>
+      </header>
+      <h2>Write a review...</h2>
+      <form id="game-review-form">
+
+        <label for="title">Movie Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" min="1" max="5" required><br><br>
+
+        <label for="entry">Written Review:</label>
+        <textarea id="entry" name="entry" required></textarea><br><br>
+
+        <button type="submit">Post Review</button>
+      </form>
+      <div id ="message"></div>
+
+      <h2>Movie Reviews</h2>
+      <div id ="reviews-container">
+        
+      </div>
+
+      <script src ="app.js"></script>
+    </div>
+  </body>
+</html>
