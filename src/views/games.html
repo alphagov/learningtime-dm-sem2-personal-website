@@ -6,7 +6,7 @@
     <title>Daniel Murray</title>
     <meta name="description" content="game review page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <div class = "container">
@@ -15,41 +15,37 @@
         <div class="left">
           <h1>Daniel Murray</h1>
         </div>  
-        <div class = "dark-mode">
+        <div class = "dark-mode-slider">
           <input type="checkbox" id="toggle">
         </div>           
       </header>                   
       <nav>
-        <a href='../index'>About Me</a>
-        <a href='/randomthoughts'>Random Thoughts</a>
+        <a href='../index.html'>About Me</a>
+        <a href='randomthoughts.html'>Random Thoughts</a>
         <a>Games</a>
-        <a href='/movies'>Movies</a>
+        <a href='movies.html'>Movies</a>
       </nav>
-      <h2>Write a review...</h2>
-      <form id="game-review-form">
-
-        <label for="title">Game Title:</label>
-        <input type="text" id="title" name="title" required><br><br>
-
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required><br><br>
-
-        <label for="rating">Rating:</label>
-        <input type="number" id="rating" min="1" max="5" required><br><br>
-
-        <label for="entry">Written Review:</label>
-        <textarea id="entry" name="entry" required></textarea><br><br>
-
-        <button type="submit">Post Review</button>
-      </form>
-      <div id ="message"></div>
-
-      <h2>Game Reviews</h2>
-      <div id ="reviews-container">
-        
+      <div class = "review-form">
+        <h2>Write a review...</h2>
+        <form id="game-review-form">
+          <label for="title">Game Title:</label>
+          <input type="text" id="title" name="title" required><br><br>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required><br><br>
+          <label for="rating">Rating:</label>
+          <input type="number" id="rating" min="1" max="5" required><br><br>
+          <label for="entry">Written Review:</label>
+          <textarea id="entry" name="entry" required></textarea><br><br>
+          <button type="submit">Post Review</button>
+        </form>
       </div>
-
-      <script src ="game.js"></script>
+      <div class = "games-title">
+        <div id ="message"></div>
+        <h2 class = "game-review-title">Game Reviews</h2>
+      </div>
+      <div id ="reviews-container"></div>
+      <script src ="../scripts/game.js"></script>
+      </div>
     </div>
   </body>
 </html>
