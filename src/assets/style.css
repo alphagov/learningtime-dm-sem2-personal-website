@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700;900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     background-color: #E3E2E6;
     margin-top: 0;
-}
-
-.dark-mode-background {
-    filter: invert(100);
 }
 
 .container {
@@ -21,18 +17,18 @@ body {
     display: flex;
 }
 
-.invis, .dark-mode {
+.invis, .dark-mode-slider {
     flex:1;
     display: flex;
 }
 
-.dark-mode {
+.dark-mode-slider {
     justify-content: end;
     align-items: center;
     padding-right: 1px;
 }
 
-.dark-mode button {
+.dark-mode-slider button {
     height: fit-content;
     width: fit-content;
 }
@@ -48,20 +44,20 @@ nav {
     border-bottom: solid 1px black;
 }
 
-/* .banner .navbar ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    padding-inline-start: 0;
-} */
-
-.about-me {
+.about-me, .content, .review-form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-self: center;
     padding: 1rem;
+
+    border-bottom: solid 1px black;
+}
+
+
+
+.content .game-review-title {
+    align-self: center;
 }
 
 #toggle {
